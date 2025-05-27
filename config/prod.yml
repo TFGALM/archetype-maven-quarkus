@@ -1,0 +1,10 @@
+#Recuerda tener un fichero como este dentro de la carpeta /config/ alojada en la raiz de tu proyecto. Debes tener SIEMPRE tres ficheros como este, donde puedes CAMBIAR O NO los valores de ellos, con los siguientes nombres: 'dev.yml', 'qa.yml', 'prod.yml'.
+runtime:
+  container: 'quarkus21native' #Para realizar compilación nativa: 'quarkus17native'. Para realizar compilación NO NATIVA: 'quarkus17'
+  javaversion: '21' #Cambiar entre 17 y 21 en función de necesidad (IMPORTANTE:: Avisar al equipo de devops con la versión de java a utilizar).
+
+#Si necesitas pasar variables en tiempo de compilación sería aqui también. Avisa al equipo de DevOps para que sean conscientes.
+#Algunos ejemplos de variables a pasar para poderlas cambiar en función del entorno:
+# - Configuraciones relacionadas a concurrencia.
+# - Urls que llamen a servicios de autenticación para validar tokens y demás.
+# - Filtros, perfiles, etc.
